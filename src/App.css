@@ -41,9 +41,15 @@ PARTIE HEADER
   flex-shrink: 1;
   width: 600px;
 }
-/* .lien {
-
-} */
+.lien {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.lien:hover {
+  color: #fff;
+  text-decoration: none;
+}
 .logo {
   margin-top: 5px;
 }

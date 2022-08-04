@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../api';
+import { Link} from 'react-router-dom';
 
 function TopStreams() {
 
@@ -83,7 +84,11 @@ function TopStreams() {
                 <h5 className="titreCartesStream">{channel.user_name}</h5>
                 <p className="txtStream">Jeu : {channel.gameName}</p>
                 <p className="txtStream viewers">Viewers : {channel.viewer_count}</p>
-                <div className="btnCarte">Regarder {channel.user_name}</div>
+
+
+                <Link className="lien" to={ `/live/${channel.login}`}>
+                  <div className="btnCarte">Regarder {channel.user_name}</div>
+                </Link>
               </div>
             </div>
           ))}

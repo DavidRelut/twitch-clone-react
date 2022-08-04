@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 npm install axios
 npm install react-router-dom
+npm install react-twitch-embed-video
 ```
 
 ## Available Scripts
