@@ -2,14 +2,20 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
-import Games from './components/Games/Games';
+import Games from './components/Games/Games'
+import TopStreams from './components/TopStreams/TopStreams';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Sidebar />
-      <Games />
+
+      <Routes>
+        <Route path='/' element={<Games/>} />
+        <Route path='/top-streams' element={<TopStreams/>} />
+      </Routes>
     </div>
   );
 }
