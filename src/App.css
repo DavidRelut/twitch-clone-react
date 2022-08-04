@@ -252,3 +252,60 @@ PARTIE GAMES
   }
 
 }
+
+/*
+////////////////////////
+PARTIE TOPSTREAMS
+///////////////////////
+*/
+
+.carteStream {
+  height: 420px;
+  width: 320px;
+  margin: 0 30px 30px 0;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 2px 11px 36px -16px rgba(0,0,0,0.75);
+
+}
+
+.carteStream:hover {
+  transform: translateY(-5px);
+}
+
+.titreCartesStream {
+  font-size: 21px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  font-weight: 500;
+}
+.cardBodyStream {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.txtStream {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.viewers {
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 559px) {
+  .carteStream {
+    margin: 0 0 30px 0;
+  }
+}
