@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  /* padding: 0; */
+  padding: 0;
 }
 
 body {
@@ -12,10 +12,10 @@ body {
   text-align: center;
 }
 
-/*
-////////////////////////
+/* 
+///////////////////////////////
 PARTIE HEADER
-///////////////////////
+///////////////////////////////
 */
 
 .headerTop {
@@ -60,7 +60,6 @@ PARTIE HEADER
 .logoLoupe {
   width: 20px;
 }
-
 .inputRecherche {
   width: 50%;
   background-color: #fff;
@@ -88,11 +87,40 @@ PARTIE HEADER
 .menuIco {
   width: 25px;
 }
+@media screen and (max-width: 950px) {
+  .liensNav:nth-child(4) {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .listeMenu {
+    flex-direction: column;
+    height: 250px;
+    padding-top: 50px;
+  }
+  .liensNav {
+    height: 100px;
+    background: #6441a4;
+    width: 100%;
+  }
+  .liensNav:nth-child(4){
+    width: 100%!important;
+    padding: 10px 0 20px 0;
+  }
+  .formSubmit {
+    justify-content: center;
+  }
+  .menuResBtn {
+    display: block!important;
+    z-index: 1000;
+  }
+}
 
-/*
-////////////////////////
+
+/* 
+///////////////////////////////
 PARTIE SIDEBAR
-///////////////////////
+///////////////////////////////
 */
 
 .sidebar {
@@ -110,7 +138,7 @@ PARTIE SIDEBAR
 }
 .listeStream {
   padding: 0 0 0 10px;
-  color: #efebf5
+  color: #efebf5;
 }
 
 .containerFlexSidebar {
@@ -159,16 +187,16 @@ PARTIE SIDEBAR
   background: crimson;
 }
 
+
 @media screen and (max-width: 1200px) {
   .sidebar {
     display: none;
   }
 }
-
-/*
-////////////////////////
+/* 
+///////////////////////////////
 PARTIE GAMES
-///////////////////////
+///////////////////////////////
 */
 
 .titreGames {
@@ -259,10 +287,10 @@ PARTIE GAMES
 
 }
 
-/*
-////////////////////////
+/* 
+///////////////////////////////
 PARTIE TOPSTREAMS
-///////////////////////
+///////////////////////////////
 */
 
 .carteStream {
@@ -317,9 +345,9 @@ PARTIE TOPSTREAMS
 }
 
 /* 
-///////////////////////
+///////////////////////////////
 PARTIE LIVE
-///////////////////////
+///////////////////////////////
 */
 
 .containerDecale {
@@ -401,11 +429,10 @@ PARTIE LIVE
 }
 
 /* 
-///////////////////////
+///////////////////////////////
 PARTIE GAMESTREAMS
-///////////////////////
+///////////////////////////////
 */
-
 
 .titreGamesStreams {
   padding-top: 100px;
@@ -459,4 +486,95 @@ PARTIE GAMESTREAMS
   .carteGameStreams {
     margin: 0 0 30px 0;
   }
+}
+
+
+/* 
+//////////////////////////////////////////
+PARTIE RESULTATS
+////////////////////////////////
+*/
+
+.containerDecaleResultats {
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-left: 239px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+.containerDecaleResultats h4 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.carteResultats {
+  height: 580px;
+  width: 350px;
+  margin-bottom: 35px;
+  position: relative;
+  transition: all 0.4s;
+  /* Proprietes bootstrap */
+  border-radius: 10px;
+  box-shadow: 2px 11px 36px -16px rgba(0,0,0,0.75);
+  margin-top: 20px;
+}
+.cardBodyResults {
+  height: 230px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardBodyResults .btnCarte{
+  align-self: flex-end;
+}
+
+.txtResult {
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+}
+.btnResult {
+  background: rgb(255, 191, 0);
+  color: #000;
+  font-size: 17px;
+}
+.btnResult:hover {
+  color: #000;
+}
+
+/* Custom */
+@media screen and (max-width:1200px) {
+  .containerDecaleResultats {
+  
+    overflow-x: hidden;
+    padding-top: 0px;
+    padding-left: 0px;
+
+  }
+  .containerDecaleResultats h4 {
+    padding-top: 100px;
+  }
+
+}
+@media screen and (max-width:600px) {
+  .containerDecaleResultats h4 {
+
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .carteResultats {
+    height: 580px;
+    width: 300px;
+
+  }
+}
+.spanTxt {
+  color: #000!important;
+}
+.titreResultats {
+ padding-top: 50px;
 }
