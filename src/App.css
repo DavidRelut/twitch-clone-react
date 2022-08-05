@@ -315,3 +315,148 @@ PARTIE TOPSTREAMS
     margin: 0 0 30px 0;
   }
 }
+
+/* 
+///////////////////////
+PARTIE LIVE
+///////////////////////
+*/
+
+.containerDecale {
+  overflow-x: hidden;
+  padding-top: 50px;
+  padding-left: 239px;
+}
+.contInfo {
+  color: #19171c;
+  display: grid;
+  height: 156px;
+  width: calc(100% - 340px);
+  grid-template: repeat(3, 35px) / 1fr 1fr;
+  margin-top: 5px;
+}
+.titreStream {
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.viewer {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: right;
+  color: crimson;
+  font-weight: 700;
+  margin: 3px 5px 0 0;
+}
+.infogame {
+  grid-area: 2 / 1 / 3 / 3;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.nomJeu {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .containerDecale {
+    padding-left: 0;
+  }
+  .contInfo{
+    width: calc(100%);
+  }
+  .viewer {
+    margin: 5px 25px 0 0;
+  }
+
+}
+
+@media screen and (max-width: 630px) {
+
+  .contInfo {
+    grid-template: 45px 35px 35px 35px / 1fr 1fr;
+  }
+  .titreStream {
+    font-size: 14px;
+  }
+  .nomJeu {
+    font-size: 14px;
+  }
+  .infogame {
+    font-size: 14px;
+  }
+  .viewer {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: left;
+
+  }
+
+}
+
+/* 
+///////////////////////
+PARTIE GAMESTREAMS
+///////////////////////
+*/
+
+
+.titreGamesStreams {
+  padding-top: 100px;
+  font-size: 53px;
+  font-weight: 300;
+  padding-left: 260px;
+  padding-bottom: 10px;
+}
+.sousTitreGameStreams {
+  font-size: 25px;
+  font-weight: 300;
+  padding-left: 260px;
+  padding-bottom: 50px;
+}
+
+.textColored {
+  color: #6441a4;
+}
+
+.carteGameStreams {
+  height: 380px;
+  width: 320px;
+  margin: 0 30px 30px 0;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 2px 11px 36px -16px rgba(0,0,0,0.75);
+}
+.carteGameStreams:hover {
+  transform: translateY(-5px);
+}
+.cardBodyGameStreams {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media screen and (max-width:1200px) {
+  .titreGamesStreams {
+    padding-left: 0px;
+    font-size: 30px;
+  }
+  .sousTitreGameStreams {
+    font-size: 17px;
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:559px) {
+  .carteGameStreams {
+    margin: 0 0 30px 0;
+  }
+}
